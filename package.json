@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/singha53/scraper.git"
+    "url": "git+https://github.com/StanStanley512/scraper.git"
   },
   "keywords": [
     "express",
@@ -18,12 +18,12 @@
     "cheerio",
     "axios"
   ],
-  "author": "Amrit Singh",
+  "author": "Shane Stanley",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/singha53/scraper/issues"
+    "url": "https://github.com/StanStanley512/scraper/issues"
   },
-  "homepage": "https://github.com/singha53/scraper#readme",
+  "homepage": "https://github.com/StanStanley512/scraper#readme",
   "dependencies": {
     "axios": "^0.18.1",
     "body-parser": "^1.18.3",
