@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Scrape the Times</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/saved">Saved Articles</a>
+      </li>
+      {{#if home}}
+      <li class="nav-item">
+        <a class="btn btn-info scrape-new">SCRAPE NEW ARTICLES</a>
+      </li>
+      {{/if}}
+      <li class="nav-item">
+        <a class="btn btn-info clear">CLEAR ARTICLES</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <div class="overlay">
+  </div>
+  <div class="background-image">
+  </div>
+  <div class="caption">
+    {{#if home}}
+    <h1>Scrape the Times</h1>
+    <p>Articles from the New York Times should populate below. Click on articles that interest
+      you and save them for later. Once your articles are saved, you can review them and leave comments
+      for later. Once you've finished your articles you can clear and start your search fresh.
+    </p>
+    {{else}}
+    <h1>Saved Articles</h1>
+    <p>Your Saved Articles</p>
+    {{/if}}
+  </div>
+</div>
+  

@@ -1,150 +1,169 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-    background-image: url("../images/bark.JPG");
+  margin-bottom: 80px;
+  background-image: url("../images/paper.png");
 }
 
-#primary {
-    background-color: forestgreen;
-    text-align: center;
-    padding: 20px 0px;
+.card a:not([href]):not([tabindex]).scrape-new {
+  color: #2196F3;
 }
 
-#primary p {
-    font-family: 'Eagle Lake', cursive;
-    font-size: 30px;
-    text-shadow: 1px 1px 2px #32CD32, 0 0 25px #ADFF2F, 0 0 5px #7FFF00;
-    color: black;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+  background-color: #000000;
 }
 
-#viewSavedButton {
-    background-color: black;
-    color: #32CD32;
-    font-family: 'Eagle Lake', cursive;
-    font-size: 20px;
-    border: 1px solid #7FFF00;
+.navbar {
+  margin-bottom: 0;
 }
 
-#viewSavedButton:hover {
-    box-shadow: 4px 4px 2px darkgreen;
-    color: white;
-    border: 1px solid white;
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  box-shadow: 10px 5px 20px 2px lightslategrey;
 }
 
-#scrapeButton, #headerButton {
-    color: black;
-    text-shadow: 1px 1px 2px #32CD32, 0 0 25px #ADFF2F, 0 0 5px #7FFF00;
-    font-family: 'Eagle Lake', cursive;
-    font-size: 25px;
-    background:rgba(255,255,255,0.5);
-    border: 1px solid #32CD32;
-    margin-bottom: 50px;
+.jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: auto;
+  background: linear-gradient(#333, black);
+  opacity: 0.7;
 }
 
-#scrapeButton:hover, #headerButton:hover {
-    color: #32CD32;
-    background-image: url("../images/leaves/leaves.png");
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.jumbotron .background-image {
+  height: 100%;
+  background-image: url("../images/nyc-skyline.jpg");
+  background-size: cover;
 }
 
-#container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; 
-    margin: 0px 2%;
-    align-items: stretch;
+.jumbotron .caption {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
 }
 
-.colocasia {
-    width: 33%;
-    height: 100%;
-    border: 2px solid black;
-    flex-grow: 1;
+.jumbotron .caption h1,
+.jumbotron .caption p {
+  color: white;
 }
 
-#slideshow {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    height: 100%;
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: 800;
 }
 
-#scrapeResults, #saved, #notes {
-    width: 85%;
-    margin: 0 auto;
+.jumbotron p {
+  font-size: 30px;
 }
 
-.card-header {
-    background-color: #DCDCDC;
-    font-family: 'Eagle Lake', cursive;
-    font-size: 25px;
-    color: #32CD32;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    border-bottom: none;
+.article-container {
+  padding-bottom: 25px;
 }
 
-#articlesDiv, #savedArticlesDiv, #savedArticleNotesDiv {
-    background-image: url("../images/asanoha-400px/asanoha-400px.png");
+.card {
+  border-radius: 0;
+  box-shadow: 3px 3px 20px lightslategrey;
+  margin: 20px 0;
 }
 
-.saveButton, .notesButton, .deleteButton {
-    background-color: forestgreen;
-    margin-left: 10px;
-    color: white;
-    border: 1px solid black;
+.card .card-header {
+  background-color: #000000;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.saveButton:hover, .notesButton:hover, .deleteButton:hover, #saveNoteButton:hover {
-    background-color: transparent;
-    color: forestgreen;
+.card .card-header h3 {
+  color: white;
 }
 
-.title {
-    text-decoration: underline;
-    font-weight: bold;
+.card .card-header .btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-#notesHeader {
-    background-color: #DCDCDC;
-    border-bottom: 1px solid rgba(0,0,0,.125);
+.card .card-header .btn.delete {
+  right: 160px;
 }
 
-#hideNotes {
-    background-color: forestgreen;
-    margin-left: 10px;
-    color: white;
-    border: 1px solid black;
-    padding: 8px 5px;
-    border-radius: .25rem;
+.card .card-body {
+  font-size: 16px;
 }
 
-.saveNoteButton {
-    background-color: forestgreen;
-    color: white;
-    border-radius: .25rem;
-    padding-left: 15px;
-    padding-right: 15px;
+.card .card-header .article-link {
+  color: white;
+  display: inline-block;
+  width: 80%;
 }
 
-.input-group {
-    padding: 5px 2%;
-    background-color: #DCDCDC;
+.footer > .container > p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin: 0;
+  font-weight: 800;
+  background: #0c7cd5;
 }
 
-ul {
-    list-style-type: none;
-    margin-right: 3%;
+.navbar-nav > li > a.scrape-new,
+.navbar-nav > li > a.clear {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 800;
+  color: white;
 }
 
-#savedArticleNotes li {
-    border-top: 1px solid #DCDCDC;
-    padding: 10px;
-    box-shadow: 5px 10px 18px #888888;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-family: 'Handlee', cursive;
+.navbar-nav > li > a.scrape-new:hover,
+.navbar-nav > li > a.clear:hover {
+  background: #4caf50;
 }
 
-.deleteNoteButton {
-    background-color: forestgreen;
-    color: white;
-    border-radius: .25rem;
-    padding: 8px 15px 5px 15px;
+.navbar-nav > li > a.scrape-new:active {
+  background: #e51c23;
+}
+
+.scrape-new {
+  cursor: pointer;
+}
+
+.m-top-80 {
+  margin-top: 80px;
+}
+
+textarea {
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+.bootbox-body .btn {
+  float: right;
+  margin: 5px;
+}
+
+.note.list-group-item .btn {
+  position: relative;
+  bottom: 10px;
 }
