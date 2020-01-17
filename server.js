@@ -3,15 +3,16 @@ var express    = require('express'),
     exphbs     = require('express-handlebars'),
     logger     = require("morgan");
     mongoose   = require('mongoose');
+    mongodb    = require('mongodb');
 
 var PORT = process.env.PORT || 8000;
 
 // Initialize Express
 var app = express();
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-mongoose.connect(MONGODB_URI);
+// mongoose.connect(MONGODB_URI);
 
 // Use morgan logger for logging requests
 app.use(logger("dev"));

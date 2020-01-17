@@ -21,15 +21,16 @@
   "author": "Shane Stanley",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/StanStanley512/scraper/issues"
+    "url": "https://github.com/StanStanley512/Mongo-Scape/issues"
   },
-  "homepage": "https://github.com/StanStanley512/scraper#readme",
+  "homepage": "https://github.com/StanStanley512/Mongo-Scape#readme",
   "dependencies": {
     "axios": "^0.18.1",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
+    "mongodb": "^3.5.0",
     "mongoose": "^5.8.7",
     "mongoose-find-or-create": "^1.3.1",
     "morgan": "^1.9.1"
