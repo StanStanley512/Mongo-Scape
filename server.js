@@ -17,7 +17,7 @@ mongoose.connect(MONGODB_URI);
 app.use(logger("dev"));
 // Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(bodyparser.json())
 // Make public a static folder
 app.use(express.static("public"));
 
