@@ -1,5 +1,5 @@
 var express    = require('express'),
-    bodyParser = require('body-parser'),
+    bodyparser = require('body-parser'),
     exphbs     = require('express-handlebars'),
     logger     = require("morgan");
     mongoose   = require('mongoose');
